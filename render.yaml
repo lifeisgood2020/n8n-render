@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: n8n
+    runtime: docker
+    repo: https://github.com/lifeisgood2020/n8n-render
+    branch: main
+    plan: free
+    envVars:
+      - key: WEBHOOK_URL
+        value: "https://n8n.yourdomain.com"
+      - key: GENERIC_TIMEZONE
+        value: "America/Toronto"
