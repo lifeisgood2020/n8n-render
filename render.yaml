@@ -10,3 +10,6 @@ services:
         value: "https://n8n.yourdomain.com"
       - key: GENERIC_TIMEZONE
         value: "America/Toronto"
+      - key: PORT
+        value: "5678"
+    startCommand: "n8n"
